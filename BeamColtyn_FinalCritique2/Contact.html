@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Donut Delights</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/ninja-slider.js" type="text/javascript"></script>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <header>
+        <!-- buttons to navigate to each section easily -->
+        <img src="img/donutDelightsLogo.png" id = "logo" alt="Logo"/>
+        <nav>
+        <ul id = "nav">
+            <li><a href="index.html" class="navItem">Home</a></li>
+            <li><a href="About.html" class="navItem">About</a></li>
+            <li><a href="#" class="navItem active">Contact</a></li>
+            <li><a href="Location.html" class="navItem">Location</a></li>
+            <li><a href="Menu.html" class="navItem">Menu</a></li>
+        </ul>
+        </nav>
+    </header>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header id = "header">
+        <h1>Welcome to Donut Delights!</h1>
+        <h2>The finest in breakfast treats and coffees since 1971</h2>
+         </header>
+        <!-- Add your site or application content here -->
+        <article id="MainArticle">
+            <div class="row">
+                <div class="column">
+                        <section id="menuitems">
+                                <dl>
+                                    <dt>Contact Info:</dt>
+                                    <dd> Donut Delights<br>
+                                        2112 Main Street Urbana, Illinois 61801<br>
+                                        (217)-555-1234<br>
+                                        email: contact@donutdelights.com<br>
+                                    </dd>
+                                </dl>
+                                <img src="img/bakery.jpg" id = "bakery" alt="Picture"/>
+                                <p id="italics">
+                                    Check out our social media to contact us<br>
+                                    and for more information:
+                                </p>
+                                </section>
+                </div>
+                <div class="column">
+                    <section id="prices">
+                        <div class="container">
+                            <form action="action_page.php">
+                          
+                              <label for="email">Email:</label>
+                              <input type="text" id="email" name="Email" placeholder="Your email..">
+                          
+                              <label for="first">First Name:</label>
+                              <input type="text" id="first" name="firstname" placeholder="Your first name..">
+                          
+                              <label for="last">Last Name:</label>
+                              <input type="text" id="last" name="lastname" placeholder="Your last name..">
+                          
+                              <label for="comments">Please leave a comment about your experience:</label>
+                              <textarea id="comments" name="comment" placeholder="Comments.." style="height:300px"></textarea>
+                          
+                              <input type="submit" value="Submit">
+                          
+                            </form>
+                          </div>
+                    </section>
+                </div>
+            </div>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+            </article>
+            
+            <!-- footer -->
+            <footer>
+                <small style = "color:whitesmoke">&copy;Donut Delights <time style = "color:whitesmoke" datetime="2018-03-31">last updated May 1, 2018</time></small>
+            </footer>
+    </body>
+</html>

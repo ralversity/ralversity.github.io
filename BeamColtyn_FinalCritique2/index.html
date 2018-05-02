@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Donut Delights</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/ninja-slider.js" type="text/javascript"></script>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <header>
+        <!-- buttons to navigate to each section easily -->
+        <img src="img/donutDelightsLogo.png" id = "logo" alt="Logo"/>
+        <nav>
+        <ul id = "nav">
+            <li><a href="#" class="navItem active">Home</a></li>
+            <li><a href="About.html" class="navItem">About</a></li>
+            <li><a href="Contact.html" class="navItem">Contact</a></li>
+            <li><a href="Location.html" class="navItem">Location</a></li>
+            <li><a href="Menu.html" class="navItem">Menu</a></li>
+        </ul>
+        </nav>
+    </header>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header id = "header">
+        <h1>Welcome to Donut Delights!</h1>
+        <h2>The finest in breakfast treats and coffees since 1971</h2>
+         </header>
+        <!-- Add your site or application content here -->
+        <article id="MainArticle">
+                <section id="Info">
+                    <div id="ninja-slider">
+                        <div class="slider-inner">
+                            <ul>
+                                <li>
+                                    <a class="ns-img" href="img/IMG_1117.jpg"></a>
+                                </li>
+                                <li><a class="ns-img" href="img/coffee_and_chokolate.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="/"><img class="ns-img" src="img/donut-+-hot-coffee-2-copy1.jpg" alt = "coffeedonut"/></a>
+                                </li>
+                                <li>
+                                    <a class="ns-img" href="img/Coffee-1.jpg"></a>
+                                </li>
+                            </ul>
+                            <div class="fs-icon" title="Expand/Close"></div>
+                        </div>
+                    </div>
+                    <p>Donut Delights has been serving C-U with the highest quality donuts and coffees since 1971.<br> 
+                        Nestled in downtown Urbana, Donut Delights has become a haven for “Gotta have it” breakfast treats.<br>
+                    Our donuts are baked fresh twice daily and our coffee’s brewed every fifteen minutes.<br>
+                    <br>If you have never been to C-U’s hidden gem, you are missing out!<br> 
+                </p>
+                </section>
+
+                <section id="Fact">
+                    <p>Did you know?<br><br>
+                    The first Friday in June is National Doughnut Day!
+                    </p>
+                </section>
+
+                <section id="topsellers">
+                    <h4>Top Sellers:</h4>
+                    <ul id="top">
+                        <li>Pistachio Pinwheels</li>
+                        <li>Boston Cream Delights</li>
+                        <li>Chocolate confetti</li>
+                        <li>Marshmallow Mayhems</li>
+                        <li>French twists</li>
+                        <li>Bulls Horns</li>
+                    </ul>
+                </section>
+
+                <script type="text/javascript">
+                    //The following script is for the group 2 navigation buttons.
+                    function switchAutoAdvance() {
+                        imageSlider.switchAuto();
+                        switchPlayPauseClass();
+                    }
+                    function switchPlayPauseClass() {
+                        var auto = document.getElementById('auto');
+                        var isAutoPlay = imageSlider.getAuto();
+                        auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+                        auto.title = isAutoPlay ? "Pause" : "Play";
+                    }
+                    switchPlayPauseClass();
+                </script>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+            </article>
+            
+            <!-- footer -->
+            <footer>
+                <small style = "color:whitesmoke">&copy;Donut Delights <time style = "color:whitesmoke" datetime="2018-03-31">last updated May 1, 2018</time></small>
+            </footer>
+    </body>
+</html>
