@@ -11,7 +11,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -49,7 +49,7 @@
                                         email: contact@donutdelights.com<br>
                                     </dd>
                                 </dl>
-                                <img src="img/bakery.jpg" id = "bakery" alt="Picture"/>
+                                <img src="img/bakery.JPG" id = "bakery" alt="Picture"/>
                                 <p id="italics">
                                     Check out our social media to contact us<br>
                                     and for more information:
@@ -59,19 +59,19 @@
                 <div class="column">
                     <section id="prices">
                         <div class="container">
-                            <form action="action_page.php">
+                            <form id = "form" name = "form" action="https://formspree.io/cbeam2@stu.parkland.edu" method="POST"></form>
                           
                               <label for="email">Email:</label>
-                              <input type="text" id="email" name="Email" placeholder="Your email..">
+                              <input type="text" class="form-control required email" id="email" name="Email" placeholder="Your email..">
                           
                               <label for="first">First Name:</label>
-                              <input type="text" id="first" name="firstname" placeholder="Your first name..">
+                              <input type="text" class="form-control required" id="first" name="firstname" placeholder="Your first name..">
                           
                               <label for="last">Last Name:</label>
-                              <input type="text" id="last" name="lastname" placeholder="Your last name..">
+                              <input type="text" class="form-control required" id="last" name="lastname" placeholder="Your last name..">
                           
                               <label for="comments">Please leave a comment about your experience:</label>
-                              <textarea id="comments" name="comment" placeholder="Comments.." style="height:300px"></textarea>
+                              <textarea id="comments" class="form-control required" name="comment" placeholder="Comments.." style="height:300px"></textarea>
                           
                               <input type="submit" value="Submit">
                           
@@ -80,6 +80,13 @@
                     </section>
                 </div>
             </div>
+
+            <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $("#form").validate();
+                });
+            </script>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
