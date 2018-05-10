@@ -49,17 +49,32 @@
                                         email: contact@donutdelights.com<br>
                                     </dd>
                                 </dl>
-                                <img src="img/bakery.JPG" id = "bakery" alt="Picture"/>
+                                <img src="img/bakery.jpg" id = "bakery" alt="Picture"/>
                                 <p id="italics">
                                     Check out our social media to contact us<br>
                                     and for more information:
+                                    <a href="https://www.facebook.com">
+                                            <img src="img/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0;">
+                                    </a> 
+                                          
+                                    <a href="https://www.plus.google.com">
+                                            <img src="img/google+.jpg" alt="google+" style="width:42px;height:42px;border:0;">
+                                    </a> 
+
+                                     <a href="https://www.instragram.com">
+                                             <img src="img/instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0;">
+                                    </a> 
+
+                                     <a href="https://www.twitter.com">
+                                            <img src="img/twitter.jpg" alt="twitter" style="width:42px;height:42px;border:0;">
+                                    </a>
                                 </p>
                                 </section>
                 </div>
                 <div class="column">
                     <section id="prices">
                         <div class="container">
-                            <form id = "form" name = "form" action="//formspree.io/cbeam2@stu.parkland.edu" method="POST">
+                            <form id = "form" name = "form" action="https://formspree.io/cbeam2@stu.parkland.edu" method="POST">
                           
                               <label for="email">Email:</label>
                               <input type="text" class="form-control required email" id="_replyto" name="Email" placeholder="Your email..">
@@ -73,7 +88,8 @@
                               <label for="comments">Please leave a comment about your experience:</label>
                               <textarea id="comments" class="form-control required" name="comment" placeholder="Comments.." style="height:300px"></textarea>
                           
-                              <input type="submit" value="Send">
+                              <input type="submit" value="Submit">
+                              <input type="hidden" name="_next" value="https://ralversity.github.io/contact.html"/>
                           
                             </form>
                           </div>
@@ -94,12 +110,15 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119029237-1"></script>
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119029237-1');
         </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
             </article>
             
             <!-- footer -->
