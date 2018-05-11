@@ -122,7 +122,18 @@ button:hover
     background-image: linear-gradient(chocolate, bisque);
 }
 
-input[type=text], select, textarea {
+#_replyto
+{
+    width: 100%; 
+    padding: 12px;   
+    box-sizing: border-box; 
+    margin-top: 15px; 
+    margin-bottom: 45px; 
+    resize: vertical 
+}
+
+input[type=text], select, textarea 
+{
     width: 100%; 
     padding: 12px;   
     box-sizing: border-box; 
