@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Donut Delights</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $("#form").validate();
+                });
+            </script>
+        <script src="js/ninja-slider.js" type="text/javascript"></script>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+    <header>
+        <!-- buttons to navigate to each section easily -->
+        <img src="img/donutDelightsLogo.png" id = "logo" alt="Logo"/>
+        <nav>
+        <ul id = "nav">
+            <li><a href="index.html" class="navItem">Home</a></li>
+            <li><a href="About.html" class="navItem">About</a></li>
+            <li><a href="#" class="navItem active">Contact</a></li>
+            <li><a href="Location.html" class="navItem">Location</a></li>
+            <li><a href="Menu.html" class="navItem">Menu</a></li>
+        </ul>
+        </nav>
+    </header>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header id = "header">
+        <h1>Contact Us!</h1>
+         </header>
+        <!-- Add your site or application content here -->
+        <article id="MainArticle">
+            <div class="row">
+                <div class="column">
+                        <section id="menuitems">
+                                <dl>
+                                    <dt>Contact Info:</dt>
+                                    <dd> Donut Delights<br>
+                                        2112 Main Street Urbana, Illinois 61801<br>
+                                        (217)-555-1234<br>
+                                        email: contact@donutdelights.com<br>
+                                    </dd>
+                                </dl>
+                                <img src="img/bakery.jpg" id = "bakery" alt="Picture"/>
+                                <p id="italics">
+                                    Check out our social media to contact us<br>
+                                    and for more information:
+                                    <a href="https://www.facebook.com">
+                                            <img src="img/facebook.jpg" alt="facebook" style="width:42px;height:42px;border:0;">
+                                    </a> 
+                                          
+                                    <a href="https://www.plus.google.com">
+                                            <img src="img/google+.jpg" alt="google+" style="width:42px;height:42px;border:0;">
+                                    </a> 
+
+                                     <a href="https://www.instragram.com">
+                                             <img src="img/Instagram.jpg" alt="instagram" style="width:42px;height:42px;border:0;">
+                                    </a> 
+
+                                     <a href="https://www.twitter.com">
+                                            <img src="img/twitter.jpg" alt="twitter" style="width:42px;height:42px;border:0;">
+                                    </a>
+                                </p>
+                                </section>
+                </div>
+                <div class="column">
+                    <section id="prices">
+                        <div class="container">
+                            <form id = "form" name = "form" action="https://formspree.io/cbeam2@stu.parkland.edu" method="POST">
+                                <label> Subscribe to our newsletter for the latest on our seasonal offerings 
+                                        and special events:</label>
+                              <label for="_replyto"></label>
+                              <input class="form-control" id="_replyto" type="email" name="Email" placeholder="Your email(required).." required>
+                          
+                              <label for="first"></label>
+                              <input type="text" class="form-contro" id="first" name="firstname" placeholder="Your first name(required).." required>
+                          
+                              <label for="last"></label>
+                              <input type="text" class="form-control" id="last" name="lastname" placeholder="Your last name..">
+                          
+                              <label for="comments"></label>
+                              <textarea id="comments" class="form-control" name="comment" placeholder="Comments.." style="height:300px"></textarea>
+                          
+                              <button type="submit" value="Submit"> Submit </button>
+                              <input type="hidden" name="_next" value="https://ralversity.github.io/Contact.html"/>
+                          
+                            </form>
+                          </div>
+                    </section>
+                </div>
+            </div>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119029237-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119029237-1');
+        </script>
+            </article>
+            
+            <!-- footer -->
+            <footer>
+                <small style = "color:whitesmoke">&copy;Donut Delights <time style = "color:whitesmoke" datetime="2018-05-10">last updated May 10, 2018</time></small>
+            </footer>
+    </body>
+</html>
