@@ -104,18 +104,10 @@ figure figcaption
     width: 600px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 15px; /* Add a top margin */
-    margin-bottom: 45px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
+button
+{
+    width: 250px;
+    height: 75px;
     background-image: linear-gradient(tan, bisque);
     color: black;
     padding: 12px 20px;
@@ -125,12 +117,21 @@ input[type=submit] {
     float: right;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+button:hover
+{
     background-image: linear-gradient(chocolate, bisque);
 }
 
-/* Add a background color and some padding around the form */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    box-sizing: border-box; 
+    margin-top: 15px; 
+    margin-bottom: 45px; 
+    resize: vertical 
+}
+
+
 .container {
     padding: 10px;
 }
